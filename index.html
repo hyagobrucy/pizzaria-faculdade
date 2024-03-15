@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaria Buonna Pizza</title>
+    <link rel="stylesheet" href="/estilo/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Pizzaria Buonna Pizza</h1>
+        <nav>
+            <ul>
+                <li><a href="#cardapio">Cardápio</a></li>
+                <li><a href="#quem-somos">Quem Somos</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="#pedido">Faça o seu pedido</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="cardapio">
+        <h2>Cardápio</h2>
+        
+        <h3>Pizzas</h3>
+        <div class="item">
+            <h4>Calabresa</h4>
+            <img src="imagens/pizza_calabresa.png" alt="Pizza Calabresa">
+            <p>Molho, Mussarela, Calabresa, Cebola, Azeitona e Orégano</p>
+            <p>R$ 49.00</p>
+        </div>
+        <div class="item">
+            <h4>Quatro Queijos</h4>
+            <img src="imagens/pizza_quatro_queijos.png" alt="Pizza Quatro Queijos">
+            <p>Molho, Mussarela, Provolone, Parmesão, Gorgonzola, Tomate, Azeitona e Orégano</p>
+            <p>R$ 52,00</p>
+        </div>
+        <div class="item">
+            <h4>Italiana</h4>
+            <img src="imagens/pizza_italiana.png" alt="Pizza Italiana">
+            <p>Molho, Mussarela, Catupiry, Salaminho, Tomate e Orégano</p>
+            <p>R$ 59,99</p>
+        </div>
+        <div class="item">
+            <h4>Presunto</h4>
+            <img src="imagens/pizza_presunto.png" alt="Pizza Presunto">
+            <p>Molho, Mussarela, Presunto, Tomate, Azeitona e Orégano</p>
+            <p>R$ 51,00</p>
+        </div>
+        <h3>Bebidas</h3>
+        <div class="item">
+            <h4>Coca-Cola 1,5L</h4>
+            <img src="imagens/coca_cola_1,5l.png" alt="Coca Cola 1,5L">
+            <p>R$ 7,00</p>
+        </div>
+        <div class="item">
+            <h4>Coca-Cola 2L</h4>
+            <img src="imagens/coca_cola_2l.png" alt="Coca Cola 2L">
+            <p>R$ 10,00</p>
+        </div>
+        <div class="item">
+            <h4>Fanta Laranja 2L</h4>
+            <img src="imagens/fanta_laranja_2l.png" alt="Fanta Laranja 2L">
+            <p>R$ 7,00</p>
+        </div>
+        <div class="item">
+            <h4>Guaraná Antarctica 2L</h4>
+            <img src="imagens/guarana_antarctica_2l.png" alt="Guaraná Antarctica 2L">
+            <p>R$ 10,00</p>
+        </div>
+        <div class="item">
+            <h4>Sprite 2L</h4>
+            <img src="imagens/sprite_2l.png" alt="Sprite 2L">
+            <p>R$ 7,00</p>
+        </div>
+    </section>    
+
+    <section id="quem-somos">
+        <h2>Quem Somos</h2>
+        <p>A <strong>Pizzaria Buonna Pizza</strong> abriu as portas em 1910, fundada pelo pizzaiolo Carmino Corvino quando este veio morar no Brasil, no tradicional bairro paulistano conhecido como Brás.</p>
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>WhatsApp (11)97777-7777</p>
+        <p>Instagram @buonnapizza</p>
+    </section>
+
+    <section id="pedido">
+        <h2>Faça seu Pedido</h2>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" required>
+            
+            <label for="endereco">Endereço de entrega:</label>
+            <textarea id="endereco" name="endereco" rows="4" required></textarea>
+            
+            <label for="pedido">Pedido:</label>
+            <textarea id="pedido" name="pedido" rows="4" required></textarea>
+            
+            <button type="submit">Enviar Pedido</button>
+        </form>
+    </section>
+    
+
+    <footer>
+        <p>&copy; 2024 Pizzaria Buonna Pizza. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,172 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Halant:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --fonte01: "Halant", serif, Verdana;
+
+    --color_branco: #ffffff;
+    --color_preto: #000000;
+    --color_cinza: #333;
+    --color_amarelo: #F9C80E;
+    --color_vermelho: #E63946;
+}
+
+body {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 1), transparent), url(../imagens/background_pizza03.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: var(--fonte01);
+    font-size: 1em;
+    margin: auto;
+    padding: 0;
+    width: 800px;
+}
+
+header {
+    background-color: var(--color_cinza);
+    color: var(--color_branco);
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 50px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--color_branco);
+}
+
+section {
+    padding: 50px;
+}
+
+footer {
+    background-color: var(--color_cinza);
+    color: var(--color_branco);
+    text-align: center;
+}
+
+footer p{
+    font-family: var(--fonte01);
+    margin-bottom: 0px;
+    padding: 2px;
+    font-size: 10px;
+}
+
+/*ESTILO PARA CARDAPIO*/
+#cardapio {
+    background-color: #cccc;
+    padding: 20px;
+    text-align: center;
+}
+
+#cardapio h2 {
+    margin-bottom: 20px;
+}
+
+#cardapio h3 {
+    text-decoration: underline;
+    margin-top: 30px;
+    font-size: 1.5em;
+}
+
+#cardapio .item {
+    margin-bottom: 30px;
+}
+
+#cardapio img {
+    display: block;
+    margin: 0 auto;
+    max-width: 200px;
+    height: auto;
+}
+
+#cardapio h4 {
+    text-decoration: underline;
+}
+
+#cardapio p {
+    text-align: center;
+}
+
+/*ESTILO PARA QUEM SOMOS*/
+#quem-somos{
+    background-color: #cccc;
+    text-align: center;
+}
+
+#quem-somos h2{
+    color: var(--color_preto);
+}
+
+#quem-somos p{
+    color: var(--color_preto);
+}
+
+/*ESTILO PARA CONTATO*/
+#contato{
+    background-color: #cccc;
+    text-align: center;
+}
+
+#contato h2{
+    color: var(--color_preto);
+}
+
+#contato p{
+    color: var(--color_preto);
+}
+
+/*ESTILO PARA PEDIDO*/
+#pedido{
+    background-color: #cccc;
+}
+
+#pedido h2{
+    text-align: center;
+}
+
+#pedido form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#pedido label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#pedido input[type="text"],
+#pedido input[type="tel"],
+#pedido textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid var(--color_preto);
+    border-radius: 5px;
+}
+
+#pedido button {
+    background-color: var(--color_cinza);
+    color: var(--color_branco);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: left;
+}
+
+#pedido button:hover {
+    background-color: var(--color_preto);
+}
