@@ -48,7 +48,7 @@ header h1{
 }
 
 header a:hover{
-    text-decoration: underline;
+    text-decoration: none;
     color: rgb(194, 194, 194);
 }
 
@@ -63,8 +63,12 @@ nav ul li {
 }
 
 nav ul li a {
-    text-decoration: none;
+    text-decoration: underline;
     color: var(--color_branco);
+}
+
+#pedido_menu{
+    margin-right: 0px;
 }
 
 section {
@@ -179,12 +183,12 @@ footer p{
 }
 
 #contato a{
-    text-decoration: none;
+    text-decoration: underline;
     color: var(--color_preto);
 }
 
 #contato a:hover{
-    text-decoration: underline;
+    text-decoration: none;
     color: var(--color_cinza01);
 }
 
@@ -217,6 +221,7 @@ footer p{
 #pedido input[type="text"],
 #pedido input[type="tel"],
 #pedido textarea {
+    background-color: var(--color_branco);
     width: 100%;
     padding: 8px;
     margin-bottom: 10px;
