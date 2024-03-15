@@ -7,7 +7,8 @@
 
     --color_branco: #ffffff;
     --color_preto: #000000;
-    --color_cinza: #333;
+    --color_cinza01: #333;
+    --color_cinza02: #ccc;
     --color_amarelo: #F9C80E;
     --color_vermelho: #E63946;
 }
@@ -26,10 +27,29 @@ body {
 }
 
 header {
-    background-color: var(--color_cinza);
+    background-color: var(--color_cinza01);
     color: var(--color_branco);
+    margin-top: 10px;
     padding: 10px;
     text-align: center;
+    border-radius: 10px 10px 0px 0px;
+}
+
+p{
+    font-size: 18px;
+}
+
+h4{
+    font-size: 20px;
+}
+
+header h1{
+    font-size: 50px;
+}
+
+header a:hover{
+    text-decoration: underline;
+    color: rgb(194, 194, 194);
 }
 
 nav ul {
@@ -52,14 +72,16 @@ section {
 }
 
 footer {
-    background-color: var(--color_cinza);
+    background-color: var(--color_cinza01);
     color: var(--color_branco);
     text-align: center;
+    border-radius: 0px 0px 5px 5px;
 }
 
 footer p{
     font-family: var(--fonte01);
-    margin-bottom: 0px;
+    margin-bottom: 10px;
+    margin-top: 0px;
     padding: 2px;
     font-size: 10px;
 }
@@ -67,22 +89,25 @@ footer p{
 /*ESTILO PARA CARDAPIO*/
 #cardapio {
     background-color: #cccc;
-    padding: 20px;
+    padding: 20px 0px;
     text-align: center;
+    border-radius: 0px 0px 10px 10px;
 }
 
 #cardapio h2 {
+    background-color: var(--color_cinza01);
+    color: var(--color_branco);
+    margin-top: 0px;
     margin-bottom: 20px;
+    height: 100px;
+    line-height: 100px;
+    border-radius: 10px 10px 0px 0px;
 }
 
 #cardapio h3 {
     text-decoration: underline;
     margin-top: 30px;
     font-size: 1.5em;
-}
-
-#cardapio .item {
-    margin-bottom: 30px;
 }
 
 #cardapio img {
@@ -100,41 +125,83 @@ footer p{
     text-align: center;
 }
 
+#cardapio .item {
+    border-bottom: 2px solid var(--color_cinza01);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
 /*ESTILO PARA QUEM SOMOS*/
 #quem-somos{
+    padding: 0px 0px 10px 0px;
     background-color: #cccc;
     text-align: center;
+    border-radius: 10px;
 }
 
 #quem-somos h2{
-    color: var(--color_preto);
+    background-color: var(--color_cinza01);
+    color: var(--color_branco);
+    height: 100px;
+    line-height: 100px;
+    border-radius: 10px 10px 0px 0px;
 }
 
 #quem-somos p{
+    margin: 20px;
     color: var(--color_preto);
 }
 
 /*ESTILO PARA CONTATO*/
 #contato{
+    padding: 0px 0px 10px 0px;
     background-color: #cccc;
     text-align: center;
+    border-radius: 10px;
 }
 
 #contato h2{
-    color: var(--color_preto);
+    background-color: var(--color_cinza01);
+    color: var(--color_branco);
+    height: 100px;
+    line-height: 100px;
+    border-radius: 10px 10px 0px 0px;
 }
 
 #contato p{
     color: var(--color_preto);
 }
 
+#contato p img {
+    vertical-align: middle;
+    margin-right: 3px;
+}
+
+#contato a{
+    text-decoration: none;
+    color: var(--color_preto);
+}
+
+#contato a:hover{
+    text-decoration: underline;
+    color: var(--color_cinza01);
+}
+
 /*ESTILO PARA PEDIDO*/
 #pedido{
+    padding: 0px 0px 50px 0px;
     background-color: #cccc;
+    border-radius: 10px 10px 0px 0px;
 }
 
 #pedido h2{
+    background-color: var(--color_cinza01);
+    color: var(--color_branco);
+    height: 100px;
+    line-height: 100px;
     text-align: center;
+    border-radius: 10px 10px 0px 0px;
 }
 
 #pedido form {
@@ -158,7 +225,7 @@ footer p{
 }
 
 #pedido button {
-    background-color: var(--color_cinza);
+    background-color: var(--color_cinza01);
     color: var(--color_branco);
     padding: 10px 20px;
     border: none;
@@ -169,4 +236,21 @@ footer p{
 
 #pedido button:hover {
     background-color: var(--color_preto);
+}
+
+/*ESTILO PARA SETA*/
+.botao-fixado {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--color_branco);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    width: 20px;
+    height: 20px;
+}
+
+.botao-fixado:hover {
+    background-color: var(--color_cinza02);
 }
